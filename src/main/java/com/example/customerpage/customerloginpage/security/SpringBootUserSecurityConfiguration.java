@@ -1,4 +1,4 @@
-package com.example.customerpage.customerloginpage;
+package com.example.customerpage.customerloginpage.security;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

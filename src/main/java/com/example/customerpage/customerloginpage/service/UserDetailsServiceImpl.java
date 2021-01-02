@@ -1,5 +1,8 @@
-package com.example.customerpage.customerloginpage;
+package com.example.customerpage.customerloginpage.service;
 
+import com.example.customerpage.customerloginpage.repository.UsersRepository;
+import com.example.customerpage.customerloginpage.model.Role;
+import com.example.customerpage.customerloginpage.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,8 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class AdminDetailsServiceImpl implements UserDetailsService {
-
+public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private UsersRepository usersRepository;
 
@@ -22,7 +24,8 @@ public class AdminDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        List<Users> usersList = usersRepository.findAdmin(userName);
+        List<Users> usersList = usersRepository.findUser(userName);
+
         if (usersList != null && usersList.size() == 1) {
             Users users = usersList.get(0);
 

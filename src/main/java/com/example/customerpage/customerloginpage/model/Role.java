@@ -1,4 +1,4 @@
-package com.example.customerpage.customerloginpage;
+package com.example.customerpage.customerloginpage.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

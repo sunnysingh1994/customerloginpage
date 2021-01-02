@@ -1,4 +1,6 @@
-package com.example.customerpage.customerloginpage;
+package com.example.customerpage.customerloginpage.model;
+
+import com.example.customerpage.customerloginpage.model.Role;
 
 import javax.persistence.*;
 import java.util.List;

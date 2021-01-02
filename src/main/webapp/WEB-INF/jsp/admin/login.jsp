@@ -1,5 +1,5 @@
 <center>
-<h1>Welcome to Admin Spring Boot Security</h1>
+<h1>Welcome Admin</h1>
 
 <form method="POST" action="/admin/login">
 	User Name : <input type="text" name="username" value="admin"/><br><br>

@@ -1,5 +1,5 @@
 <center>
-<h1>Welcome to Spring Boot Security</h1>
+<h1>Welcome to our website</h1>
 
 <form method="POST" action="/login">
 	User Name : <input type="text" name="username" value="user"/><br><br>
