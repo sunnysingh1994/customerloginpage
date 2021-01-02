@@ -1,5 +1,5 @@
 # customerloginpage
-A login page for a company having user and admin login 
+A login page for a company having user and admin login authority
 
 To run this project create a db with name customer.
 There are three tables required for authenticating spring boot security. The three tables are USERS, ROLE and USER_ROLE. The Users table contains user related details such as username, password etc. The role table contains the roles supported in the spring boot security. The users and role table has many to many relationship using user_role table. The mysql database is used in this example. The sql is as below
